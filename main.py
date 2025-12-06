@@ -24,8 +24,11 @@ def init_services():
     model = genai.GenerativeModel('gemini-2.0-flash')
 
     # Qdrant client
-    url = "https://4ef7f8a3-ee49-4cb5-b53b-41c05f890f41.europe-west3-0.gcp.cloud.qdrant.io:6333"
-    key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.Z1ATwOQWPvWrvZReWK7h8c0QjvBu8_NHclta7qOFgLQ"
+    from qdrant_client import QdrantClient
+
+
+    url = "https://295efda4-568d-454f-88ce-962031f3b025.us-east4-0.gcp.cloud.qdrant.io:6333"
+    key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0._M0TJiVNyo6GV0LksoqPLWKPznKP_hhsiywPFcq7hCc"
     client = QdrantClient(url=url, api_key=key)
 
     # Embedding model
