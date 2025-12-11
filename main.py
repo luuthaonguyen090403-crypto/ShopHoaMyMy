@@ -10,7 +10,7 @@ from io import BytesIO
 
 # Load environment variables (for local development)
 
-GEMINI_API_KEY = "AIzaSyCQKSKWgOYDrFvwhoOXHJegTDrAaLZuE2k"
+GEMINI_API_KEY = "AIzaSyA1oL68N3JPFuYFY1yPxcQWYde-utVsLh0"
 # Hide deprecation warnings
 import warnings
 
